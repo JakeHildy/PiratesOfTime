@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Gold : MonoBehaviour
+namespace RPG.UserInterface
 {
-
-    [SerializeField] int startingGold = 100;
-    [SerializeField] TextMeshProUGUI goldText;
-
-    private int gold;
-
-    void Start()
+    public class Gold : MonoBehaviour
     {
-        goldText.text = startingGold.ToString();
-        gold = startingGold;
+        [SerializeField] int startingGold = 100;
+        [SerializeField] TextMeshProUGUI goldText;
+
+        private int gold;
+
+        void Start()
+        {
+            goldText.text = startingGold.ToString();
+            gold = startingGold;
+        }
+
+
     }
-
-
 }
+
