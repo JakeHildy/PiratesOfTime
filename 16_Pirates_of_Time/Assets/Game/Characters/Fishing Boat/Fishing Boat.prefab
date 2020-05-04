@@ -35,6 +35,7 @@ GameObject:
   - component: {fileID: 3249729760309751890}
   - component: {fileID: 3945748494017010115}
   - component: {fileID: 5990149154859024656}
+  - component: {fileID: 5756504438699125093}
   m_Layer: 0
   m_Name: Fishing Boat
   m_TagString: Untagged
@@ -244,6 +245,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5756504438699125093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7358527332902299078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2281811f7090143904068d000151b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropOnDeath: {fileID: 3075554066746734758, guid: 3f3ae91dabdc1e74088cde5780fe0e90,
+    type: 3}
+  minGoldDropChestValue: 5
+  maxGoldDropChestValue: 200
 --- !u!1001 &115763587520746513
 PrefabInstance:
   m_ObjectHideFlags: 0

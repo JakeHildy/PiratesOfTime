@@ -44,6 +44,11 @@ namespace RPG.Core
             animator.SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
             DisableColliders();
+            LootDropper lootDropper = GetComponent<LootDropper>();
+            if (lootDropper != null)
+            {
+                lootDropper.DropItem();
+            }            
             Destroy(gameObject, 2f);
         }
 

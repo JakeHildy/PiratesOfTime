@@ -13,11 +13,22 @@ namespace RPG.UserInterface
         private int gold;
 
         void Start()
-        {
-            goldText.text = startingGold.ToString();
+        {           
             gold = startingGold;
+            UpdateGoldText();
         }
 
+
+        public void AddGold(int amount)
+        {
+            gold += amount;
+            UpdateGoldText();
+        }
+
+        private void UpdateGoldText()
+        {
+            goldText.text = gold.ToString();
+        }
 
     }
 }
