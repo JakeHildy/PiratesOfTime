@@ -23,10 +23,24 @@ namespace RPG.Movement
 
         }
 
+        public void DisableMover()
+        {
+            Cancel();
+            navMeshAgent.enabled = false;
+        }
+
+        public void EnableMover()
+        {
+            navMeshAgent.enabled = true;
+        }
+
         public void StartMoveAction(Vector3 destination, float speedFraction)
         {
-            GetComponent<ActionScheduler>().StartAction(this);
-            MoveTo(destination, speedFraction);
+            if (navMeshAgent.enabled)
+            {
+                GetComponent<ActionScheduler>().StartAction(this);
+                MoveTo(destination, speedFraction);
+            }            
         }
 
         public void MoveTo(Vector3 destination, float speedFraction)

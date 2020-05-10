@@ -25,6 +25,20 @@ namespace RPG.UserInterface
             UpdateGoldText();
         }
 
+        public bool PurchaseSomething(int price)
+        {
+            if (gold >= price)
+            {
+                gold -= price;
+                UpdateGoldText();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         private void UpdateGoldText()
         {
             goldText.text = gold.ToString();
