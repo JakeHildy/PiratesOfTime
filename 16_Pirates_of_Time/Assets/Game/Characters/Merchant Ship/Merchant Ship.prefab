@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd683b51377307429cc3eb18e74e62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 500
+  healthPoints: 800
   animator: {fileID: 5955512654994406813}
   impactSoundFX: {fileID: 8300000, guid: 33354cb14d6747d40af29650d2a96579, type: 3}
 --- !u!65 &3945748494017010115

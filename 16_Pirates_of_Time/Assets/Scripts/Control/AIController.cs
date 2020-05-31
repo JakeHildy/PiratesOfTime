@@ -38,6 +38,11 @@ namespace RPG.Control
             UpdateTimers();
         }
 
+        public void SetPatrolPath(PatrolPath path)
+        {
+            patrolPath = path;
+        }
+
 
         private void PatrolBehaviour()
         {
